@@ -1,0 +1,26 @@
+﻿<Window x:Name="aboutWindow" x:Class="JSE.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JSE"
+        mc:Ignorable="d"
+        Title="About JSE" Height="300" Width="300" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="textBlock" Grid.Row ="0"  Margin="10,10,10,10" TextWrapping="Wrap" Text="JSE für build 0.5" FontSize="24" TextAlignment="Center"/>
+        <Button x:Name="button" Content="Close" Grid.Row="2" RenderTransformOrigin="0.689,0.608" Margin="90,10,90,10" Click="button_Click"/>
+        <RichTextBox x:Name="richTextBox" Grid.Row="1" Margin="10">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="To do soon"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</Window>

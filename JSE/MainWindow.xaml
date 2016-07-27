@@ -1,0 +1,41 @@
+﻿<Window x:Name="jseWindow" x:Class="JSE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JSE"
+        xmlns:p="clr-namespace:JSE.Properties"
+        mc:Ignorable="d"
+        Title="{x:Static p:Resources.Title}" Height="400" Width="250" ResizeMode="CanMinimize" Loaded="jseWindow_Loaded">
+    <DockPanel>
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar>
+                <Button x:Name="saveButtonToolBar" Content="Save" Click="saveButtonToolBar_Click"/>
+                <Button x:Name="aboutButtonToolBar" Content="About" Click="aboutButtonToolBar_Click" />
+            </ToolBar>
+        </ToolBarTray>
+        <TabControl>
+            <TabItem Header="General">
+                <StackPanel>
+                    <Label Content="Money amount" Margin="5,0,5,5" Height="27"/>
+                    <TextBox x:Name="moneyTextBox" Margin="10,0,10,5" Height="23" TextWrapping="Wrap"/>
+
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Laika">
+                <TabControl>
+                    <TabItem Header="Engine">
+
+                    </TabItem>
+                    <TabItem Header="Fuel tank">
+
+                    </TabItem>
+                    <TabItem Header="Water tank">
+
+                    </TabItem>
+                </TabControl>
+            </TabItem>
+        </TabControl>
+    </DockPanel>
+
+</Window>
