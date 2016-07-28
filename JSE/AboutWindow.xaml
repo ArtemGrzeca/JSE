@@ -14,13 +14,11 @@
         </Grid.RowDefinitions>
         <TextBlock x:Name="textBlock" Grid.Row ="0"  Margin="10,10,10,10" TextWrapping="Wrap" Text="JSE für build 0.5" FontSize="24" TextAlignment="Center"/>
         <Button x:Name="button" Content="Close" Grid.Row="2" RenderTransformOrigin="0.689,0.608" Margin="90,10,90,10" Click="button_Click"/>
-        <RichTextBox x:Name="richTextBox" Grid.Row="1" Margin="10">
-            <FlowDocument>
-                <Paragraph>
-                    <Run Text="To do soon"/>
-                </Paragraph>
-            </FlowDocument>
-        </RichTextBox>
+        <TextBlock x:Name="richTextBox" Grid.Row="1" Margin="10">
+            Version 0.0<LineBreak/>
+            Made by ArtemGrzeca<LineBreak/>
+            <Hyperlink NavigateUri="https://web.facebook.com/lukezaa" RequestNavigate="Hyperlink_RequestNavigate">Facebook</Hyperlink>
+        </TextBlock>
 
     </Grid>
 </Window>
